@@ -12,6 +12,6 @@ CSS Preprocessor: SCSS
 proximity: Delhi  
 proximity_square: 200  
 page: 1  
-(In 1 page they give upto 25 results, when I used proximity_square 100 it was 18, and it is giving 20 results on proximity_square 200)  
+(In 1 page they give upto 25 results, when I used proximity_square 100 it was 18,  and it is giving 20 results on proximity_square 200)  
   
  
