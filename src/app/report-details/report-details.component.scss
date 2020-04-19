@@ -1,0 +1,77 @@
+.report-details-div {
+  .back_button {
+    padding-left: 1rem;
+  }
+
+  .report-details {
+    margin: 3%;
+    box-sizing: border-box;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+
+      .column {
+        flex: 45%;
+        max-width: 45%;
+        padding: 0 4px;
+
+        .info-line {
+          display: flex;
+          margin-bottom: 0.5rem;
+
+          span {
+            margin-left: 0.25rem;
+            padding-top: 0.25rem;
+            font-weight: 500;
+          }
+
+          &:first-of-type {
+            margin-top: 1rem;
+          }
+        }
+
+        .google_map_div {
+          margin-top: 1rem;
+        }
+
+        img {
+          margin-top: 8px;
+          vertical-align: middle;
+          border-radius: 4px;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+  }
+
+  .no_data {
+    margin: 3%;
+
+    label {
+      padding: 1rem;
+      font-size: 1rem;
+
+      &.error {
+        color: red;
+      }
+    }
+  }
+
+}

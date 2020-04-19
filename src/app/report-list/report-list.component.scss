@@ -1,0 +1,101 @@
+.report-div {
+  margin: 3%;
+
+  table {
+    width: 100%;
+
+    .report-list-row {
+      height: 8rem;
+
+      .case-descp {
+        padding: 0rem 3rem;
+        padding-top: 0.75rem;
+
+        .case-title {
+          font-size: 1rem;
+        }
+
+        .case-details {
+          margin-top: 0.5rem;
+        }
+
+        .info-line {
+          display: flex;
+          margin-bottom: 0.5rem;
+
+          mat-icon {
+            margin-right: 0.5rem;
+          }
+
+          &:first-of-type {
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      .case_image {
+        width: 7rem;
+
+        .bike-image {
+          width: 6rem;
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.search-div {
+  margin: 3%;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 0px;
+
+      mat-form-field {
+        width: 90%;
+        padding: 0 5%;
+      }
+
+      button {
+        margin: 0 5%;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.no_data {
+  margin: 3%;
+
+  label {
+    padding: 1rem;
+    font-size: 1rem;
+
+    &.error {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<div class="report-details-div">
+  <button routerLink="/" mat-icon-button aria-label="Back Button" class="back_button" style="">
+    <mat-icon>keyboard_backspace</mat-icon>
+  </button>
+
+  <div class="report-details" *ngIf="caseDetails">
+
+    <div class="row">
+      <div class="column">
+        <h2>{{caseDetails.title}}</h2>
+        <p>{{caseDetails.description}}</p>
+        <p class="info-line">
+          <mat-icon aria-hidden="false" aria-label="Calendar icon">event</mat-icon>
+          <span>Stolen Date: {{caseDetails.stolen_date | date: 'medium'}}</span>
+        </p>
+        <p class="info-line">
+          <mat-icon aria-hidden="false" aria-label="Calendar icon">event</mat-icon>
+          <span>Reported Date: {{caseDetails.reported_date | date: 'medium'}}</span>
+        </p>
+        <p class="info-line">
+          <mat-icon aria-hidden="false" aria-label="Address Icon">room</mat-icon>
+          <span>Address: {{caseDetails.address}}</span>
+        </p>
+        <google-map height="300px" [center]="center" [zoom]="zoom" class="google_map_div">
+          <map-marker #marker *ngFor="let markerPosition of markerPositions" [position]="markerPosition"
+            [options]="markerOptions"></map-marker>
+        </google-map>
+
+      </div>
+
+      <div class="column">
+        <img [src]="caseDetails.bike_image" alt="Bike Image" />
+      </div>
+
+    </div>
+  </div>
+
+  <div class="no_data" *ngIf="errorState">
+    <label class="error">Oops, something went wrong</label>
+  </div>
+
+</div>
