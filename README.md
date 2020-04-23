@@ -9,7 +9,7 @@ Base font-size: 16px (1rem)
 CSS Preprocessor: SCSS  
 
 ## bikewise api settings
-proximity: Delhi  
+proximity: Udaipur  
 proximity_square: 200  
 page: 1  
 (In 1 page they give upto 25 results,  
